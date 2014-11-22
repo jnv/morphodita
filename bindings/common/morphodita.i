@@ -182,7 +182,7 @@ class tagset_converter {
  public:
   virtual ~tagset_converter() {}
 
-  virtual void convert(tagged_lemma& tagged_lemma) const;
+  virtual void convert(tagged_lemma& tagged_lemma_arg) const;
   %rename(convertAnalyzed) convert_analyzed;
   virtual void convert_analyzed(std::vector<tagged_lemma>& tagged_lemmas) const;
   %rename(convertGenerated) convert_generated;

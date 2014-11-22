@@ -1,0 +1,4 @@
+include ../common/Makefile.common
+
+PKG_CPPFLAGS=-I../../src/include $(DYN_C_FLAGS) $(BINDING_C_FLAGS)
+PKG_LIBS="$(DYN_LD_FLAGS) $(BINDING_LD_FLAGS)"
